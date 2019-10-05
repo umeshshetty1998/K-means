@@ -29,7 +29,7 @@ while True:
         oldclusterList=clusterList.copy()
         for m in range(clusterCount):
             for n in range(length):
-                if clusterList[m]==selectedMeanList[n]:
+                if clusterList[m]!=selectedMeanList[n]:
                     newList.append(inputList[n])
             clusterList[m]=sum(newList)/len(newList)
             del newList[:] 
